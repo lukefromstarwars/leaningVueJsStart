@@ -5,6 +5,7 @@ new Vue({
   el: '#app',
   data: {
     show: true,
+    msg: 'choose name',
     names: ['Pierre', 'Bertrand', 'Michel'],
     organisations: [{
         'id': 16133,

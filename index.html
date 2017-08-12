@@ -28,12 +28,16 @@
     <button class="btn" @click="show=!show">show</button>
     <hr>
     <ul>
-      <li v-for="n in names">{{n}}</li>
+      <li v-for="n in names" :key="">{{n}}</li>
     </ul>
+    <input type="text" v-model="msg">
+    <button class="btn btn-danger" @click="names.push(msg)">Add name</button>
     <hr>
     <ul>
-      <li v-for="(o, index) in organisations">{{index}} - {{o.nameOfficialFr}}</li>
+      <li v-for="(o, index) in organisations">{{++index}} - {{o.nameOfficialFr}}</li>
     </ul>
+    <hr>
+    <span v-for="i in ['qsdfqsdf', 'qsdmfkds']">{{i}},</span>
   </div>
 </body>
 
