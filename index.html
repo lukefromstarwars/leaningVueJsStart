@@ -26,6 +26,14 @@
     </div>
     <hr>
     <button class="btn" @click="show=!show">show</button>
+    <hr>
+    <ul>
+      <li v-for="n in names">{{n}}</li>
+    </ul>
+    <hr>
+    <ul>
+      <li v-for="(o, index) in organisations">{{index}} - {{o.nameOfficialFr}}</li>
+    </ul>
   </div>
 </body>
 
