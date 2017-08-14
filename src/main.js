@@ -1,5 +1,9 @@
 import Vue from "vue";
 
+Vue.component("Hello", {
+  template: "<h1>Hello component</h1>"
+});
+
 /* eslint-disable no-new */
 var vm = new Vue({
   el: "#app",
@@ -30,14 +34,16 @@ var vm = new Vue({
   }
 });
 
-setTimeout(function() {
-  vm.title = "Changed By Time";
-  vm.show();
-}, 2000);
+// setTimeout(function() {
+//   vm.title = "Changed By Time";
+//   vm.show();
+// }, 2000);
 
-vm.newProp = "New";
-console.log(vm.$refs);
-vm.$refs.heading.innerText = "Something else";
+// var vm3 = new Vue({
+//   el: "Hello",
+//   template: "<h1>Hello from app3</h1>"
+// });
+// vm3.$mount("#app3");
 
 /* eslint-disable no-new */
 new Vue({
