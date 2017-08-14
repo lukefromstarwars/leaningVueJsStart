@@ -1,20 +1,26 @@
 <template>
-  <router-view></router-view>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <app-user></app-user>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
+import User from './components/User.vue';
+
 export default {
-  name: 'app'
-}
+  components: {
+    appUser: User
+  }
+};
 </script>
-<!--
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+div.component {
+  border: 1px solid black;
+  padding: 30px;
 }
-</style> -->
+</style>
