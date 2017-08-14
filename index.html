@@ -17,7 +17,9 @@
 
 <body class="container-fluid">
   <div id="app">
-
+    <h1>{{title}}</h1>
+    <button type="text" @click="title='Changed'" class="btn btn-warning">Update Title</button>
+    <button type="text" @click="destroy" class="btn btn-danger">Destroy</button>
   </div>
 </body>
 
