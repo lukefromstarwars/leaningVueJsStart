@@ -2,7 +2,7 @@
   <div>
     <ul class="list-group">
       <li class="list-group-item">
-        <app-server-status v-for="server in 10">
+        <app-server-status v-for="server in 10" v-bind:key="server">
         </app-server-status>
       </li>
     </ul>
@@ -21,6 +21,6 @@ export default {
 
 <style scoped>
 div {
-  border: 1px solid red;
+  border: 1px solid yellowgreen;
 }
 </style>
