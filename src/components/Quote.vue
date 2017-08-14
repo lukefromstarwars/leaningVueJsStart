@@ -1,23 +1,17 @@
 <template>
   <div>
-    <!-- <div class="title">
-        <slot name="title"></slot>
-        <span style="color: #ccc">
-          <slot name="subtitle">The Subtitle</slot>
-        </span>
-      </div>
-      <hr>
-      <div>
-        <slot></slot>
-      </div> -->
-    <p>{{quote}}</p>
-    <p>A Wonderful quote</p>
+    <slot name="title"> </slot>
+    <span>
+      <slot name="subtitle">The subtitle</slot>
+    </span>
+    <hr>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["quote"]
+
 };
 </script>
 
