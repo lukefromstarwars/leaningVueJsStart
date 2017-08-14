@@ -26,7 +26,7 @@ module.exports = {
     'quotes': [0, 'double'],
     'indent': [0, 2],
     "space-before-function-paren": ["error", {
-      "anonymous": "always",
+      "anonymous": "never",
       "named": "always",
       "asyncArrow": "always"
     }],

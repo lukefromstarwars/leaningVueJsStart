@@ -17,7 +17,13 @@
 
 <body class="container-fluid">
   <div id="app">
-
+    <h1 ref="heading">{{title}}</h1>
+    <button class="btn btn-danger" type="text" @click="show" ref="myButton">Show paragraph</button>
+    <p v-if="showParagraph">Not always visible</p>
+  </div>
+  <div id="app2">
+    <h1>{{title}}</h1>
+    <button class="btn btn-warning" type="text" @click="onChange">change title 1</button>
   </div>
 </body>
 
