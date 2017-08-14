@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-server-status></app-server-status>
+    <app-servers></app-servers>
   </div>
 </template>
 
