@@ -30,5 +30,6 @@ module.exports = {
       "named": "always",
       "asyncArrow": "always"
     }],
+    "semi": ["error", "always"]
   }
 }
