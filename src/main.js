@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 
 Vue.directive("hili", {
-  bind (el, binding, vnode) {
+  bind(el, binding, vnode) {
     // el.style.backgroundColor = "green";
     // el.style.backgroundColor = binding.value;
     var delay = 0;

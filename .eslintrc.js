@@ -27,7 +27,7 @@ module.exports = {
       "error",
       {
         anonymous: "never",
-        named: "always",
+        named: "never",
         asyncArrow: "always"
       }
     ],
