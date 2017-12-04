@@ -1,8 +1,8 @@
 // http://eslint.org/docs/user-guide/configuring
 
 module.exports = {
-  root: true,
-  parser: 'babel-eslint',
+  root         : true,
+  parser       : 'babel-eslint',
   parserOptions: {
     sourceType: 'module'
   },
@@ -22,13 +22,17 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'quotes': [0, 'double'],
-    'indent': [0, 2],
-    "space-before-function-paren": ["error", {
-      "anonymous": "always",
-      "named": "always",
+    'no-debugger'                : process.env.NODE_ENV === 'production' ? 2: 0,
+    'quotes'                     : [0, 'double'],
+    'indent'                     : [0, 2],
+    "space-before-function-paren": [1, {
+      "anonymous" : "always",
+      "named"     : "always",
       "asyncArrow": "always"
     }],
+    'key-spacing': [1, {
+      // 'beforeColon': false,
+      // 'afterColon' : true,
+      'align'      : 'colon'}]
   }
 }

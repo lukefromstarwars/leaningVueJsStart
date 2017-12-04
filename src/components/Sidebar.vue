@@ -12,7 +12,7 @@
 <script>
 
 export default {
-  name: 'sidebar',
+  name   : 'sidebar',
   methods: {
     handleClick (e) {
       e.preventDefault()

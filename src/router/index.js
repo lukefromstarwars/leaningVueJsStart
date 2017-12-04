@@ -10,19 +10,19 @@ import Dashboard from '@/views/Dashboard'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'hash',
+  mode           : 'hash',
   linkActiveClass: 'open active',
-  scrollBehavior: () => ({ y: 0 }),
-  routes: [
+  scrollBehavior : () => ({ y: 0 }),
+  routes         : [
     {
-      path: '/',
-      redirect: '/dashboard',
-      name: 'Home',
+      path     : '/',
+      redirect : '/dashboard',
+      name     : 'Home',
       component: Full,
-      children: [
+      children : [
         {
-          path: 'dashboard',
-          name: 'Dashboard',
+          path     : 'dashboard',
+          name     : 'Dashboard',
           component: Dashboard
         }
 

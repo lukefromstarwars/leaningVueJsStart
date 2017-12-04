@@ -14,7 +14,7 @@ import navbar from './Navbar'
 import { dropdown } from 'vue-strap'
 
 export default {
-  name: 'header',
+  name      : 'header',
   components: {
     navbar,
     dropdown

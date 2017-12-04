@@ -10,9 +10,9 @@
 export default {
   props: {
     list: {
-      type: Array,
+      type    : Array,
       required: true,
-      default: () => []
+      default : () => []
     }
   },
   methods: {

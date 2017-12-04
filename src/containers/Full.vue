@@ -21,7 +21,7 @@ import AppFooter from '../components/Footer'
 import Breadcrumb from '../components/Breadcrumb'
 
 export default {
-  name: 'full',
+  name      : 'full',
   components: {
     AppHeader,
     Sidebar,
